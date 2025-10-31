@@ -1,0 +1,75 @@
+import { Button } from "@/components/ui/button";
+import { MapPin, CheckCircle, TrendingUp } from "lucide-react";
+import heroBg from "@/assets/images/hero-bg.jpg";
+
+const Hero = () => {
+  return (
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
+      {/* Background Image with Overlay */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src={heroBg}
+          alt="AI-powered vehicle management"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/85 via-background/75 to-background/90"></div>
+      </div>
+
+      {/* Content */}
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="max-w-4xl mx-auto text-center animate-fade-in">
+          {/* Company Tagline */}
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/90 border border-primary mb-6">
+            <span className="text-sm font-medium text-white">AI-Powered Solutions for Automotive Operations</span>
+          </div>
+
+          {/* Main Headline */}
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight text-foreground">
+            Empowering Dealerships to{" "}
+            <span className="text-primary">Work Smarter</span>
+          </h1>
+
+          {/* Subheadline */}
+          <p className="text-xl md:text-2xl text-foreground/80 mb-8 max-w-3xl mx-auto">
+            We build intelligent tools that transform complex automotive challenges into simple, automated solutions—starting with Vehix for recall management
+          </p>
+
+          {/* CTAs */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 animate-slide-up">
+            <Button size="lg" className="text-lg px-8 shadow-lg hover:shadow-xl transition-all">
+              Request Demo
+            </Button>
+            <Button size="lg" variant="outline" className="text-lg px-8">
+              Watch Demo Video
+            </Button>
+          </div>
+
+          {/* Social Proof */}
+          <div className="flex flex-wrap justify-center gap-8 text-sm text-foreground/70 animate-scale-in">
+            <div className="flex items-center gap-2">
+              <CheckCircle className="w-5 h-5 text-primary" />
+              <span>Trusted by 50+ dealerships</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <MapPin className="w-5 h-5 text-primary" />
+              <span>10,000+ recalls managed</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <TrendingUp className="w-5 h-5 text-primary" />
+              <span>99.9% uptime</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Scroll Indicator */}
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+        <div className="w-6 h-10 border-2 border-primary rounded-full flex items-start justify-center p-2">
+          <div className="w-1.5 h-2 bg-primary rounded-full animate-pulse"></div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Hero;
