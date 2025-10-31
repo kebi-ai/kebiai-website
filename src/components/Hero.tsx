@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { MapPin, CheckCircle, TrendingUp } from "lucide-react";
+import { Cpu, Zap, Building2 } from "lucide-react";
 import heroBg from "@/assets/images/hero-bg.jpg";
 
 const Hero = () => {
@@ -20,18 +20,18 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center animate-fade-in">
           {/* Company Tagline */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/90 border border-primary mb-6">
-            <span className="text-xs sm:text-sm font-medium text-white">AI-Powered Solutions for Automotive Operations</span>
+            <span className="text-xs sm:text-sm font-medium text-white">AI-Powered Intelligence for Automotive Operations</span>
           </div>
 
           {/* Main Headline */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight text-foreground">
-            Empowering Dealerships to{" "}
-            <span className="text-primary">Work Smarter</span>
+            Transform Operations with{" "}
+            <span className="text-primary">AI Automation</span>
           </h1>
 
           {/* Subheadline */}
           <p className="text-xl md:text-2xl text-foreground/80 mb-8 max-w-3xl mx-auto">
-            We build intelligent tools that transform complex automotive challenges into simple, automated solutions—starting with Vehix for recall management
+            Vehix leverages artificial intelligence to automate complex workflows, deliver predictive insights, and optimize automotive operations at scale
           </p>
 
           {/* CTAs */}
@@ -47,16 +47,16 @@ const Hero = () => {
           {/* Social Proof */}
           <div className="flex flex-wrap justify-center gap-8 text-sm text-foreground/70 animate-scale-in">
             <div className="flex items-center gap-2">
-              <CheckCircle className="w-5 h-5 text-primary" />
-              <span>Trusted by 50+ dealerships</span>
+              <Cpu className="w-5 h-5 text-primary" />
+              <span>AI-Powered Solutions</span>
             </div>
             <div className="flex items-center gap-2">
-              <MapPin className="w-5 h-5 text-primary" />
-              <span>10,000+ recalls managed</span>
+              <Zap className="w-5 h-5 text-primary" />
+              <span>Intelligent Automation</span>
             </div>
             <div className="flex items-center gap-2">
-              <TrendingUp className="w-5 h-5 text-primary" />
-              <span>99.9% uptime</span>
+              <Building2 className="w-5 h-5 text-primary" />
+              <span>Built for Dealerships</span>
             </div>
           </div>
         </div>

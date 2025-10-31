@@ -305,23 +305,15 @@ This website follows WCAG 2.1 AA guidelines:
 - Alt text for images
 - Focus indicators
 
-## Editing & Deployment
+## Development & Deployment
 
-### Edit with Lovable
+### Local Development
 
-**Lovable Project URL**: https://lovable.dev/projects/0372d1fd-efed-4ddc-af50-935bbba0ce1f
-
-Simply visit the Lovable Project and start prompting. Changes made via Lovable will be committed automatically to this repo.
-
-### Edit Locally
-
-Clone this repo and push changes. Pushed changes will be reflected in Lovable.
-
-**Requirements:** Node.js & npm - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+**Requirements:** Node.js 20+ & npm - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
 ```bash
 # Clone the repository
-git clone <YOUR_GIT_URL>
+git clone git@github.com:kebi-ai/kebiai-website.git
 
 # Navigate to project directory
 cd kebiai-website
@@ -333,6 +325,8 @@ npm install
 npm run dev
 ```
 
+Visit `http://localhost:8080` to view the site.
+
 ### Edit on GitHub
 
 - **Direct Edit**: Navigate to files, click "Edit" button (pencil icon), make changes and commit
@@ -340,14 +334,10 @@ npm run dev
 
 ### Deploy
 
-**Via Lovable:**
-Open [Lovable](https://lovable.dev/projects/0372d1fd-efed-4ddc-af50-935bbba0ce1f) and click Share → Publish.
+**Automatic Deployment:**
+The site automatically deploys to [https://kebi.ai](https://kebi.ai) via GitHub Actions on every push to the `main` branch.
 
-**Custom Domain:**
-Navigate to Project > Settings > Domains and click Connect Domain.
-[Learn more](https://docs.lovable.dev/features/custom-domain#custom-domain)
-
-**Manual Deployment:**
+**Manual Build:**
 ```bash
 npm run build
 ```
@@ -417,7 +407,6 @@ rm -rf node_modules/.vite
 - [Tailwind CSS Documentation](https://tailwindcss.com/)
 - [shadcn/ui Documentation](https://ui.shadcn.com/)
 - [Radix UI Documentation](https://www.radix-ui.com/)
-- [Lovable Documentation](https://docs.lovable.dev/)
 
 ## License
 

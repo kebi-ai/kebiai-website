@@ -1,29 +1,29 @@
-import { Upload, Route, Activity, FileText } from "lucide-react";
+import { Plug, Brain, BarChart3, RefreshCcw } from "lucide-react";
 
 const steps = [
   {
-    icon: Upload,
+    icon: Plug,
     number: "01",
-    title: "Import Recall Data",
-    description: "Import recalls from OEM databases or upload manually with bulk import capabilities",
+    title: "AI Learns Your Operations",
+    description: "Connect your systems and let AI analyze patterns, workflows, and operational data",
   },
   {
-    icon: Route,
+    icon: Brain,
     number: "02",
-    title: "AI Routes & Assigns",
-    description: "Intelligent AI assigns and routes technicians to optimal locations based on multiple factors",
+    title: "Intelligent Automation Activates",
+    description: "AI optimizes processes, automates workflows, and orchestrates complex operations",
   },
   {
-    icon: Activity,
+    icon: BarChart3,
     number: "03",
-    title: "Track in Real-Time",
-    description: "Monitor progress live on your dashboard with instant updates and notifications",
+    title: "Real-Time AI Monitoring",
+    description: "Track performance with AI-powered dashboards delivering instant insights and alerts",
   },
   {
-    icon: FileText,
+    icon: RefreshCcw,
     number: "04",
-    title: "Generate Reports",
-    description: "Access comprehensive analytics and reports on completion rates and performance",
+    title: "Continuous AI Improvement",
+    description: "The system learns from outcomes and continuously refines its intelligence",
   },
 ];
 
@@ -33,10 +33,10 @@ const HowItWorks = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16 animate-fade-in">
           <h2 className="text-3xl md:text-5xl font-bold mb-4">
-            Simple Process, Powerful Results
+            AI-Driven Operations in 4 Steps
           </h2>
           <p className="text-lg text-muted-foreground">
-            Get started in minutes and see results immediately
+            Intelligence that adapts to your business and improves over time
           </p>
         </div>
 

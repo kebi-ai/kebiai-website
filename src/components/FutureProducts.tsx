@@ -1,6 +1,13 @@
-import { Package, Calendar, TrendingUp, Truck, Users, Sparkles } from "lucide-react";
+import { Package, Calendar, TrendingUp, Truck, Users, Sparkles, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import futureProductsImg from "@/assets/images/future-products.jpg";
+
+const vehixProduct = {
+  icon: CheckCircle,
+  title: "Vehix - Recall Management",
+  description: "AI-powered recall management streamlining operations across dealership networks",
+  isAvailable: true,
+};
 
 const futureProducts = [
   {
@@ -22,11 +29,6 @@ const futureProducts = [
     icon: Truck,
     title: "Fleet Operations",
     description: "Comprehensive fleet management and maintenance tracking",
-  },
-  {
-    icon: Users,
-    title: "Customer Experience",
-    description: "Enhanced customer communication and satisfaction tools",
   },
 ];
 
@@ -50,25 +52,41 @@ const FutureProducts = () => {
           </div>
           
           <h2 className="text-3xl md:text-5xl font-bold mb-4">
-            Vehix is Just the Beginning
+            AI-Powered Solutions, Expanding Horizons
           </h2>
           <p className="text-lg text-muted-foreground mb-6">
-            We're building a complete suite of AI-powered tools for automotive operations. 
-            Starting with recall management, we're expanding to solve every operational challenge you face.
+            Vehix showcases our AI capabilities in action. We're building intelligent solutions
+            that transform automotive operations across multiple domains.
           </p>
           <p className="text-base text-muted-foreground">
-            <strong>Kebi AI LLC</strong> is committed to transforming automotive operations through intelligent automation and data analytics.
+            <strong>Kebi AI LLC</strong> leverages artificial intelligence to deliver automation,
+            insights, and optimization throughout the automotive industry.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto mb-12">
+          {/* Vehix - Available Now */}
+          <div className="bg-gradient-to-br from-primary/10 to-primary/5 backdrop-blur-sm p-6 rounded-xl border-2 border-primary/50 hover:border-primary transition-all duration-300 hover:shadow-lg animate-scale-in relative">
+            <div className="absolute top-4 right-4">
+              <span className="inline-flex items-center gap-1 px-2 py-1 rounded-full bg-primary text-white text-xs font-medium">
+                Available Now
+              </span>
+            </div>
+            <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center mb-4">
+              <CheckCircle className="w-6 h-6 text-primary" />
+            </div>
+            <h3 className="text-lg font-semibold mb-2">{vehixProduct.title}</h3>
+            <p className="text-sm text-muted-foreground">{vehixProduct.description}</p>
+          </div>
+
+          {/* Future Products */}
           {futureProducts.map((product, index) => {
             const Icon = product.icon;
             return (
               <div
                 key={index}
                 className="bg-card/50 backdrop-blur-sm p-6 rounded-xl border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg animate-scale-in"
-                style={{ animationDelay: `${index * 0.1}s` }}
+                style={{ animationDelay: `${(index + 1) * 0.1}s` }}
               >
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <Icon className="w-6 h-6 text-primary" />
@@ -79,7 +97,8 @@ const FutureProducts = () => {
             );
           })}
 
-          <div className="bg-gradient-to-br from-primary/20 to-secondary/20 p-6 rounded-xl border border-primary/30 flex items-center justify-center">
+          {/* More Coming Soon */}
+          <div className="bg-gradient-to-br from-primary/20 to-secondary/20 p-6 rounded-xl border border-primary/30 flex items-center justify-center animate-scale-in" style={{ animationDelay: `${(futureProducts.length + 1) * 0.1}s` }}>
             <div className="text-center">
               <Sparkles className="w-12 h-12 text-primary mx-auto mb-3" />
               <p className="text-sm font-medium">And more coming soon...</p>

@@ -1,20 +1,20 @@
-import { AlertTriangle, Clock, BarChart3 } from "lucide-react";
+import { RefreshCw, Database, TrendingDown } from "lucide-react";
 
 const problems = [
   {
-    icon: AlertTriangle,
-    title: "Complex Multi-Location Management",
-    description: "Managing recalls across multiple dealership locations is time-consuming and prone to errors",
+    icon: RefreshCw,
+    title: "Manual Processes Hold You Back",
+    description: "Repetitive operational tasks that AI could automate consume valuable time and resources",
   },
   {
-    icon: Clock,
-    title: "Inefficient Routing & Scheduling",
-    description: "Manual technician routing wastes valuable time and significantly increases operational costs",
+    icon: Database,
+    title: "Data Without Intelligence",
+    description: "Operational information exists but lacks the AI-powered insights to drive meaningful action",
   },
   {
-    icon: BarChart3,
-    title: "Limited Visibility & Compliance Risks",
-    description: "Lack of real-time tracking creates compliance risks and reduces customer satisfaction",
+    icon: TrendingDown,
+    title: "Reactive Instead of Predictive",
+    description: "Without AI-driven forecasting, challenges are addressed after they occur rather than prevented",
   },
 ];
 
@@ -24,10 +24,10 @@ const ProblemStatement = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16 animate-fade-in">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            The Challenge Dealerships Face
+            Traditional Operations Need AI
           </h2>
           <p className="text-lg text-muted-foreground">
-            Managing vehicle recalls shouldn't be this complicated
+            Transform challenges into opportunities with intelligent automation
           </p>
         </div>
 

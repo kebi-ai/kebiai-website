@@ -1,4 +1,4 @@
-import { Map, Route, Activity, Users, Settings, BarChart } from "lucide-react";
+import { Brain, Zap, LineChart, Network, Workflow, TrendingUp } from "lucide-react";
 import geographicVisualization from "@/assets/images/geographic-visualization.png";
 import aiRouting from "@/assets/images/ai-routing.png";
 import realTimeDashboard from "@/assets/images/real-time-dashboard.png";
@@ -8,45 +8,45 @@ import performanceAnalytics from "@/assets/images/performance-analytics.png";
 
 const features = [
   {
-    icon: Map,
-    title: "Geographic Recall Visualization",
-    description: "Interactive map showing recall distribution across your dealer network with real-time status updates and heat maps",
-    benefit: "Get instant visibility into where recalls need attention",
+    icon: Brain,
+    title: "AI-Powered Insights",
+    description: "Machine learning algorithms analyze operational patterns and surface actionable intelligence from your data",
+    benefit: "Discover hidden opportunities and optimize decision-making",
     image: geographicVisualization,
   },
   {
-    icon: Route,
-    title: "AI-Powered Routing & Assignment",
-    description: "Intelligent technician routing that optimizes travel time and assigns recalls based on skills, availability, and location",
-    benefit: "Reduce travel costs by up to 40% and complete more recalls daily",
+    icon: Zap,
+    title: "Intelligent Automation",
+    description: "AI automates complex workflows and repetitive tasks, freeing your team to focus on high-value activities",
+    benefit: "Reduce manual effort and accelerate operations",
     image: aiRouting,
   },
   {
-    icon: Activity,
-    title: "Real-Time Tracking Dashboard",
-    description: "Live monitoring of recall completion rates, technician performance, and campaign progress with customizable metrics",
-    benefit: "Make data-driven decisions and identify bottlenecks instantly",
+    icon: LineChart,
+    title: "Predictive Analytics",
+    description: "AI forecasts trends, identifies potential bottlenecks, and recommends optimal resource allocation strategies",
+    benefit: "Stay ahead of challenges with proactive intelligence",
     image: realTimeDashboard,
   },
   {
-    icon: Users,
-    title: "Multi-Tenant Management",
-    description: "Centralized platform for managing multiple dealership locations with role-based access control",
-    benefit: "Maintain oversight while giving local teams autonomy",
+    icon: Network,
+    title: "Smart Orchestration",
+    description: "AI coordinates operations across multiple locations, ensuring consistent processes and optimal efficiency",
+    benefit: "Seamlessly manage complexity at scale",
     image: multiTenant,
   },
   {
-    icon: Settings,
-    title: "Campaign Configuration",
-    description: "Set up recall campaigns with custom priority levels, urgency indicators, and automated notifications",
-    benefit: "Focus resources on critical recalls and ensure compliance",
+    icon: Workflow,
+    title: "Adaptive Learning",
+    description: "The system continuously learns from your operations, adapting to your unique workflows and improving over time",
+    benefit: "Experience intelligence that evolves with your business",
     image: campaignConfig,
   },
   {
-    icon: BarChart,
-    title: "Performance Analytics",
-    description: "Comprehensive reporting on completion rates, response times, cost per recall, and productivity metrics",
-    benefit: "Demonstrate ROI and continuously improve operations",
+    icon: TrendingUp,
+    title: "Real-Time Intelligence",
+    description: "AI-powered dashboards deliver instant insights, alerts, and recommendations based on live operational data",
+    benefit: "Make informed decisions with up-to-the-minute intelligence",
     image: performanceAnalytics,
   },
 ];
@@ -57,10 +57,10 @@ const Features = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16 animate-fade-in">
           <h2 className="text-3xl md:text-5xl font-bold mb-4">
-            Everything You Need to Manage Recalls
+            AI-Powered Capabilities
           </h2>
           <p className="text-lg text-muted-foreground">
-            Powerful features designed specifically for automotive dealerships
+            Intelligent solutions that learn, adapt, and optimize your automotive operations
           </p>
         </div>
 
