@@ -53,7 +53,7 @@ const features = [
 
 const Features = () => {
   return (
-    <section id="features" className="py-20">
+    <section id="features" className="py-12 md:py-16 lg:py-20">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16 animate-fade-in">
           <h2 className="text-3xl md:text-5xl font-bold mb-4">
@@ -99,6 +99,7 @@ const Features = () => {
                         src={feature.image}
                         alt={feature.title}
                         className="w-full h-auto"
+                        loading="lazy"
                       />
                     </div>
                   ) : (

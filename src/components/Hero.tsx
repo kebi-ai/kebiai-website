@@ -20,11 +20,11 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center animate-fade-in">
           {/* Company Tagline */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/90 border border-primary mb-6">
-            <span className="text-sm font-medium text-white">AI-Powered Solutions for Automotive Operations</span>
+            <span className="text-xs sm:text-sm font-medium text-white">AI-Powered Solutions for Automotive Operations</span>
           </div>
 
           {/* Main Headline */}
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight text-foreground">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight text-foreground">
             Empowering Dealerships to{" "}
             <span className="text-primary">Work Smarter</span>
           </h1>

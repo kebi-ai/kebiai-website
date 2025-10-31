@@ -35,7 +35,7 @@ const Navigation = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2"
+            className="md:hidden p-3"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle menu"
           >
@@ -49,28 +49,28 @@ const Navigation = () => {
             <div className="flex flex-col gap-4">
               <a
                 href="#features"
-                className="text-sm font-medium text-foreground hover:text-primary transition-colors py-2"
+                className="text-sm font-medium text-foreground hover:text-primary transition-colors py-3"
                 onClick={() => setIsOpen(false)}
               >
                 Features
               </a>
               <a
                 href="#benefits"
-                className="text-sm font-medium text-foreground hover:text-primary transition-colors py-2"
+                className="text-sm font-medium text-foreground hover:text-primary transition-colors py-3"
                 onClick={() => setIsOpen(false)}
               >
                 Benefits
               </a>
               <a
                 href="#product"
-                className="text-sm font-medium text-foreground hover:text-primary transition-colors py-2"
+                className="text-sm font-medium text-foreground hover:text-primary transition-colors py-3"
                 onClick={() => setIsOpen(false)}
               >
                 Product
               </a>
               <a
                 href="#contact"
-                className="text-sm font-medium text-foreground hover:text-primary transition-colors py-2"
+                className="text-sm font-medium text-foreground hover:text-primary transition-colors py-3"
                 onClick={() => setIsOpen(false)}
               >
                 Contact
