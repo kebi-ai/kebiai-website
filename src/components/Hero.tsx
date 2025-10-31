@@ -20,18 +20,18 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center animate-fade-in">
           {/* Company Tagline */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/90 border border-primary mb-6">
-            <span className="text-xs sm:text-sm font-medium text-white">AI-Powered Intelligence for Automotive Operations</span>
+            <span className="text-xs sm:text-sm font-medium text-white">Building the Future of Automotive Intelligence</span>
           </div>
 
           {/* Main Headline */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight text-foreground">
-            Transform Operations with{" "}
-            <span className="text-primary">AI Automation</span>
+            AI Solutions for Every{" "}
+            <span className="text-primary">Automotive Challenge</span>
           </h1>
 
           {/* Subheadline */}
           <p className="text-xl md:text-2xl text-foreground/80 mb-8 max-w-3xl mx-auto">
-            Vehix leverages artificial intelligence to automate complex workflows, deliver predictive insights, and optimize automotive operations at scale
+            From recalls to inventory, scheduling to procurement—Kebi AI delivers intelligent automation across your entire operation. Starting with <span className="font-semibold text-primary">Vehix</span>, our flagship vehicle recall management platform
           </p>
 
           {/* CTAs */}
