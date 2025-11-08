@@ -31,16 +31,13 @@ const Hero = () => {
 
           {/* Subheadline */}
           <p className="text-xl md:text-2xl text-foreground/80 mb-8 max-w-3xl mx-auto">
-            From recalls to inventory, scheduling to procurement—Kebi AI delivers intelligent automation across your entire operation. Starting with <span className="font-semibold text-primary">Vehix</span>, our flagship vehicle recall management platform
+            From recalls to inventory, scheduling to procurement—Kebi AI delivers intelligent automation across your entire operation. Starting with <a href="http://www.vehix.ai/" target="_blank" rel="noopener noreferrer" className="font-semibold text-primary hover:underline">Vehix</a>, our flagship vehicle recall management platform
           </p>
 
           {/* CTAs */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 animate-slide-up">
+          <div className="flex justify-center mb-12 animate-slide-up">
             <Button size="lg" className="text-lg px-8 shadow-lg hover:shadow-xl transition-all">
               Request Demo
-            </Button>
-            <Button size="lg" variant="outline" className="text-lg px-8">
-              Watch Demo Video
             </Button>
           </div>
 

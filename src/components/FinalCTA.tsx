@@ -17,7 +17,7 @@ const FinalCTA = () => {
             Ready to Transform Your Recall Management?
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground mb-8">
-            Join leading dealerships using Vehix to complete more recalls, reduce costs, 
+            Join leading dealerships using <a href="http://www.vehix.ai/" target="_blank" rel="noopener noreferrer" className="font-semibold text-primary hover:underline">Vehix</a> to complete more recalls, reduce costs,
             and improve customer satisfaction
           </p>
 

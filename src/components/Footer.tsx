@@ -28,7 +28,7 @@ const Footer = () => {
                 <Twitter className="w-4 h-4" />
               </a>
               <a
-                href="#"
+                href="mailto:contact@kebi.ai"
                 className="w-8 h-8 rounded-full bg-background/10 hover:bg-background/20 flex items-center justify-center transition-colors"
                 aria-label="Email"
               >
@@ -42,7 +42,7 @@ const Footer = () => {
             <h3 className="font-semibold text-lg mb-4">Products</h3>
             <ul className="space-y-2 text-sm opacity-80">
               <li>
-                <a href="#features" className="hover:opacity-100 transition-opacity">
+                <a href="http://www.vehix.ai/" target="_blank" rel="noopener noreferrer" className="hover:opacity-100 transition-opacity">
                   Vehix - Recall Management
                 </a>
               </li>

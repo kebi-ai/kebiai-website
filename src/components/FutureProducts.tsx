@@ -7,6 +7,7 @@ const vehixProduct = {
   title: "Vehix - Recall Management",
   description: "AI-powered recall management streamlining operations across dealership networks",
   isAvailable: true,
+  link: "http://www.vehix.ai/",
 };
 
 const futureProducts = [
@@ -55,7 +56,7 @@ const FutureProducts = () => {
             AI-Powered Solutions, Expanding Horizons
           </h2>
           <p className="text-lg text-muted-foreground mb-6">
-            Vehix showcases our AI capabilities in action. We're building intelligent solutions
+            <a href="http://www.vehix.ai/" target="_blank" rel="noopener noreferrer" className="font-semibold text-primary hover:underline">Vehix</a> showcases our AI capabilities in action. We're building intelligent solutions
             that transform automotive operations across multiple domains.
           </p>
           <p className="text-base text-muted-foreground">
@@ -66,7 +67,7 @@ const FutureProducts = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto mb-12">
           {/* Vehix - Available Now */}
-          <div className="bg-gradient-to-br from-primary/10 to-primary/5 backdrop-blur-sm p-6 rounded-xl border-2 border-primary/50 hover:border-primary transition-all duration-300 hover:shadow-lg animate-scale-in relative">
+          <a href={vehixProduct.link} target="_blank" rel="noopener noreferrer" className="bg-gradient-to-br from-primary/10 to-primary/5 backdrop-blur-sm p-6 rounded-xl border-2 border-primary/50 hover:border-primary transition-all duration-300 hover:shadow-lg animate-scale-in relative block">
             <div className="absolute top-4 right-4">
               <span className="inline-flex items-center gap-1 px-2 py-1 rounded-full bg-primary text-white text-xs font-medium">
                 Available Now
@@ -77,7 +78,7 @@ const FutureProducts = () => {
             </div>
             <h3 className="text-lg font-semibold mb-2">{vehixProduct.title}</h3>
             <p className="text-sm text-muted-foreground">{vehixProduct.description}</p>
-          </div>
+          </a>
 
           {/* Future Products */}
           {futureProducts.map((product, index) => {
