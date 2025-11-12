@@ -44,7 +44,7 @@ Gzipped CSS: 11.5 KB
 
 ## 🔗 External Links Verified
 
-### All Vehix References Link to vehix.ai
+### All Vehix References Link to https://vehix.ai/
 - [x] Hero subheadline
 - [x] About Section (2 links in "Introducing Vehix")
 - [x] Expanding Horizons section
@@ -202,7 +202,7 @@ npm run build
 
 ### Business Contact
 - **Email**: contact@kebi.ai
-- **Vehix Website**: http://www.vehix.ai
+- **Vehix Website**: https://vehix.ai/
 - **Company**: Kebi AI LLC
 
 ---

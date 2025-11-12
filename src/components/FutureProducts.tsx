@@ -7,7 +7,7 @@ const vehixProduct = {
   title: "Vehix - Recall Management",
   description: "AI-powered recall management streamlining operations across dealership networks",
   isAvailable: true,
-  link: "http://www.vehix.ai/",
+  link: "https://vehix.ai/",
 };
 
 const futureProducts = [
@@ -56,7 +56,7 @@ const FutureProducts = () => {
             AI-Powered Solutions, Expanding Horizons
           </h2>
           <p className="text-lg text-muted-foreground mb-6">
-            <a href="http://www.vehix.ai/" target="_blank" rel="noopener noreferrer" className="font-semibold text-primary hover:underline">Vehix</a> showcases our AI capabilities in action. We're building intelligent solutions
+            <a href="https://vehix.ai/" target="_blank" rel="noopener noreferrer" className="font-semibold text-primary hover:underline">Vehix</a> showcases our AI capabilities in action. We're building intelligent solutions
             that transform automotive operations across multiple domains.
           </p>
           <p className="text-base text-muted-foreground">

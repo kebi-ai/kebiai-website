@@ -83,7 +83,7 @@ const AboutSection = () => {
                   <Rocket className="w-8 h-8 text-primary" />
                 </div>
                 <h3 className="text-3xl md:text-4xl font-bold mb-3">
-                  <a href="http://www.vehix.ai/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+                  <a href="https://vehix.ai/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
                     Introducing Vehix
                   </a>
                 </h3>
@@ -91,7 +91,7 @@ const AboutSection = () => {
                   Our Flagship Product
                 </p>
                 <p className="text-base md:text-lg text-foreground/80 max-w-4xl mx-auto leading-relaxed">
-                  <a href="http://www.vehix.ai/" target="_blank" rel="noopener noreferrer" className="font-semibold text-primary hover:underline">Vehix</a> is Kebi AI's premier recall intelligence platform, designed specifically for automotive dealerships.
+                  <a href="https://vehix.ai/" target="_blank" rel="noopener noreferrer" className="font-semibold text-primary hover:underline">Vehix</a> is Kebi AI's premier recall intelligence platform, designed specifically for automotive dealerships.
                   It combines cutting-edge AI technology with intuitive design to streamline recall management,
                   automate customer outreach, and maximize service department efficiency. With Vehix, dealerships
                   transform recalls from administrative burdens into revenue opportunities.
@@ -143,7 +143,7 @@ const AboutSection = () => {
               Expanding Horizons
             </h2>
             <p className="text-base md:text-lg text-foreground/80 max-w-3xl mx-auto leading-relaxed">
-              While <a href="http://www.vehix.ai/" target="_blank" rel="noopener noreferrer" className="font-semibold text-primary hover:underline">Vehix</a> leads the way today, we're building a comprehensive suite of AI solutions to address every challenge in automotive operations. The future is intelligent, automated, and built for growth.
+              While <a href="https://vehix.ai/" target="_blank" rel="noopener noreferrer" className="font-semibold text-primary hover:underline">Vehix</a> leads the way today, we're building a comprehensive suite of AI solutions to address every challenge in automotive operations. The future is intelligent, automated, and built for growth.
             </p>
           </div>
         </div>

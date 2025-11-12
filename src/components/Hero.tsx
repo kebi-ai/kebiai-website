@@ -12,7 +12,7 @@ const Hero = () => {
           alt="AI-powered vehicle management"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/85 via-background/75 to-background/90"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-background/90 via-background/85 to-background/90"></div>
       </div>
 
       {/* Content */}
@@ -31,13 +31,19 @@ const Hero = () => {
 
           {/* Subheadline */}
           <p className="text-xl md:text-2xl text-foreground/80 mb-8 max-w-3xl mx-auto">
-            From recalls to inventory, scheduling to procurement—Kebi AI delivers intelligent automation across your entire operation. Starting with <a href="http://www.vehix.ai/" target="_blank" rel="noopener noreferrer" className="font-semibold text-primary hover:underline">Vehix</a>, our flagship vehicle recall management platform
+            From recalls to inventory, scheduling to procurement—Kebi AI delivers intelligent automation across your entire operation. Starting with <a href="https://vehix.ai/" target="_blank" rel="noopener noreferrer" className="font-semibold text-primary hover:underline">Vehix</a>, our flagship vehicle recall management platform
           </p>
 
           {/* CTAs */}
           <div className="flex justify-center mb-12 animate-slide-up">
-            <Button size="lg" className="text-lg px-8 shadow-lg hover:shadow-xl transition-all">
-              Request Demo
+            <Button
+              size="lg"
+              className="text-lg px-8 shadow-lg hover:shadow-xl transition-all"
+              asChild
+            >
+              <a href="mailto:contact@kebi.ai?subject=Vehix%20Demo%20Request&body=Hi%20Kebi%20AI%20Team%2C%0D%0A%0D%0AI'm%20interested%20in%20scheduling%20a%20demo%20of%20Vehix%20for%20my%20dealership.%0D%0A%0D%0ADealership%20Name%3A%20%0D%0AYour%20Name%3A%20%0D%0AYour%20Title%3A%20%0D%0APhone%20Number%3A%20%0D%0APreferred%20Date%2FTime%3A%20%0D%0A%0D%0AThank%20you%2C">
+                Request Demo
+              </a>
             </Button>
           </div>
 

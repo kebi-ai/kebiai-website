@@ -42,7 +42,7 @@ const Footer = () => {
             <h3 className="font-semibold text-lg mb-4">Products</h3>
             <ul className="space-y-2 text-sm opacity-80">
               <li>
-                <a href="http://www.vehix.ai/" target="_blank" rel="noopener noreferrer" className="hover:opacity-100 transition-opacity">
+                <a href="https://vehix.ai/" target="_blank" rel="noopener noreferrer" className="hover:opacity-100 transition-opacity">
                   Vehix - Recall Management
                 </a>
               </li>

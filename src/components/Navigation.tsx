@@ -28,8 +28,10 @@ const Navigation = () => {
             <a href="#contact" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
               Contact
             </a>
-            <Button variant="default" size="sm">
-              Request Demo
+            <Button variant="default" size="sm" asChild>
+              <a href="mailto:contact@kebi.ai?subject=Vehix%20Demo%20Request&body=Hi%20Kebi%20AI%20Team%2C%0D%0A%0D%0AI'm%20interested%20in%20scheduling%20a%20demo%20of%20Vehix%20for%20my%20dealership.%0D%0A%0D%0ADealership%20Name%3A%20%0D%0AYour%20Name%3A%20%0D%0AYour%20Title%3A%20%0D%0APhone%20Number%3A%20%0D%0APreferred%20Date%2FTime%3A%20%0D%0A%0D%0AThank%20you%2C">
+                Request Demo
+              </a>
             </Button>
           </div>
 
@@ -75,8 +77,10 @@ const Navigation = () => {
               >
                 Contact
               </a>
-              <Button variant="default" className="w-full">
-                Request Demo
+              <Button variant="default" className="w-full" asChild>
+                <a href="mailto:contact@kebi.ai?subject=Vehix%20Demo%20Request&body=Hi%20Kebi%20AI%20Team%2C%0D%0A%0D%0AI'm%20interested%20in%20scheduling%20a%20demo%20of%20Vehix%20for%20my%20dealership.%0D%0A%0D%0ADealership%20Name%3A%20%0D%0AYour%20Name%3A%20%0D%0AYour%20Title%3A%20%0D%0APhone%20Number%3A%20%0D%0APreferred%20Date%2FTime%3A%20%0D%0A%0D%0AThank%20you%2C">
+                  Request Demo
+                </a>
               </Button>
             </div>
           </div>

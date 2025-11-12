@@ -6,7 +6,7 @@
 [![Vite](https://img.shields.io/badge/Vite-5.4.19-purple)]()
 [![Tailwind](https://img.shields.io/badge/Tailwind-3.4.17-38bdf8)]()
 
-> **Official marketing website for Kebi AI LLC** - Showcasing AI-powered solutions for the automotive industry, starting with [Vehix](http://www.vehix.ai), our flagship vehicle recall management platform.
+> **Official marketing website for Kebi AI LLC** - Showcasing AI-powered solutions for the automotive industry, starting with [Vehix](https://vehix.ai/), our flagship vehicle recall management platform.
 
 ## 🚀 Quick Start
 
@@ -104,7 +104,7 @@ kebiai-website/
 
 ## 🔗 External Links
 
-- **Vehix Website**: <http://www.vehix.ai>
+- **Vehix Website**: <https://vehix.ai/>
 - **Contact Email**: <contact@kebi.ai>
 
 All Vehix mentions throughout the site link to the Vehix website and open in a new tab.
@@ -182,7 +182,7 @@ For production deployment:
 ## ✅ Production Checklist
 
 - [x] Removed unused components and assets
-- [x] All Vehix references link to <http://www.vehix.ai>
+- [x] All Vehix references link to <https://vehix.ai/>
 - [x] Contact email updated to <contact@kebi.ai>
 - [x] Mobile-responsive design verified
 - [x] SEO meta tags configured
@@ -233,7 +233,7 @@ This is a private project for Kebi AI LLC. For internal development:
 
 - **Email**: <contact@kebi.ai>
 - **Website**: <http://www.kebi.ai>
-- **Vehix**: <http://www.vehix.ai>
+- **Vehix**: <https://vehix.ai/>
 
 ## 📄 License
 
