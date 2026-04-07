@@ -7,7 +7,7 @@ const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-xl backdrop-saturate-150 border-b border-neutral-200/50 shadow-[0_1px_3px_hsl(40_10%_20%/0.04)]">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <a href="/" className="flex items-center gap-2">
