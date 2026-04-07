@@ -1,34 +1,16 @@
 import { Button } from "@/components/ui/button";
 import { Cpu, Zap, Building2 } from "lucide-react";
 import heroBg from "@/assets/images/hero-bg.jpg";
-import heroVideo from "@/assets/images/hero_video_kebi.mp4";
 
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
-      {/* Background Video (Desktop) and Image (Mobile) with Overlay */}
+      {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
-        {/* Video Background - Hidden on mobile */}
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="hidden md:block w-full h-full object-cover"
-          ref={(video) => {
-            if (video) {
-              video.playbackRate = 0.7;
-            }
-          }}
-        >
-          <source src={heroVideo} type="video/mp4" />
-        </video>
-
-        {/* Image Background - Visible only on mobile */}
         <img
           src={heroBg}
           alt="AI-powered vehicle management"
-          className="md:hidden w-full h-full object-cover"
+          className="w-full h-full object-cover"
         />
 
         <div className="absolute inset-0 bg-gradient-to-b from-background/95 via-background/90 to-background"></div>
