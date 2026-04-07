@@ -1,37 +1,58 @@
 import { Button } from "@/components/ui/button";
 import { Cpu, Zap, Building2 } from "lucide-react";
 import heroBg from "@/assets/images/hero-bg.jpg";
+import heroVideo from "@/assets/images/hero_video_kebi.mp4";
 
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
-      {/* Background Image with Overlay */}
+      {/* Background Video (Desktop) and Image (Mobile) with Overlay */}
       <div className="absolute inset-0 z-0">
+        {/* Video Background - Hidden on mobile */}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="hidden md:block w-full h-full object-cover"
+          ref={(video) => {
+            if (video) {
+              video.playbackRate = 0.7;
+            }
+          }}
+        >
+          <source src={heroVideo} type="video/mp4" />
+        </video>
+
+        {/* Image Background - Visible only on mobile */}
         <img
           src={heroBg}
           alt="AI-powered vehicle management"
-          className="w-full h-full object-cover"
+          className="md:hidden w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/90 via-background/85 to-background/90"></div>
+
+        <div className="absolute inset-0 bg-gradient-to-b from-background/95 via-background/90 to-background"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,hsl(42_65%_52%/0.15),transparent)]"></div>
       </div>
 
       {/* Content */}
       <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-4xl mx-auto text-center animate-fade-in">
+        <div className="max-w-4xl mx-auto text-center animate-fade-up">
           {/* Company Tagline */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/90 border border-primary mb-6">
-            <span className="text-xs sm:text-sm font-medium text-white">Building the Future of Automotive Intelligence</span>
+          <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-primary/10 backdrop-blur-sm border border-primary/20 mb-8">
+            <span className="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+            <span className="text-sm font-medium text-foreground/90">Building the Future of Automotive Intelligence</span>
           </div>
 
           {/* Main Headline */}
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight text-foreground">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight tracking-tight text-foreground">
             AI Solutions for Every{" "}
-            <span className="text-primary">Automotive Challenge</span>
+            <span className="text-primary bg-gradient-to-r from-primary to-primary-light bg-clip-text">Automotive Challenge</span>
           </h1>
 
           {/* Subheadline */}
-          <p className="text-xl md:text-2xl text-foreground/80 mb-8 max-w-3xl mx-auto">
-            From recalls to inventory, scheduling to procurement—Kebi AI delivers intelligent automation across your entire operation. Starting with <a href="https://vehix.ai/" target="_blank" rel="noopener noreferrer" className="font-semibold text-primary hover:underline">Vehix</a>, our flagship vehicle recall management platform
+          <p className="text-xl md:text-2xl text-foreground/80 mb-10 max-w-3xl mx-auto font-medium leading-relaxed">
+            From recalls to inventory, scheduling to procurement—Kebi AI delivers intelligent automation across your entire operation. Starting with <a href="https://vehix.ai/" target="_blank" rel="noopener noreferrer" className="font-semibold text-primary hover:underline underline-offset-4 transition-colors">Vehix</a>, our flagship vehicle recall management platform
           </p>
 
           {/* CTAs */}
@@ -66,9 +87,10 @@ const Hero = () => {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-primary rounded-full flex items-start justify-center p-2">
-          <div className="w-1.5 h-2 bg-primary rounded-full animate-pulse"></div>
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2">
+        <div className="flex flex-col items-center gap-2 text-muted-foreground/60">
+          <span className="text-xs font-medium tracking-widest uppercase">Scroll</span>
+          <div className="w-px h-8 bg-gradient-to-b from-primary/50 to-transparent animate-pulse"></div>
         </div>
       </div>
     </section>
