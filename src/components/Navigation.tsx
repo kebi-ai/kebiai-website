@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import kebiLogo from "@/assets/images/kebi-logo.png";
+import { DEMO_URL } from "@/lib/links";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,7 +30,7 @@ const Navigation = () => {
               Contact
             </a>
             <Button variant="default" size="sm" asChild>
-              <a href="mailto:contact@kebi.ai?subject=Vehix%20Demo%20Request&body=Hi%20Kebi%20AI%20Team%2C%0D%0A%0D%0AI'm%20interested%20in%20scheduling%20a%20demo%20of%20Vehix%20for%20my%20dealership.%0D%0A%0D%0ADealership%20Name%3A%20%0D%0AYour%20Name%3A%20%0D%0AYour%20Title%3A%20%0D%0APhone%20Number%3A%20%0D%0APreferred%20Date%2FTime%3A%20%0D%0A%0D%0AThank%20you%2C">
+              <a href={DEMO_URL}>
                 Request Demo
               </a>
             </Button>
@@ -78,7 +79,7 @@ const Navigation = () => {
                 Contact
               </a>
               <Button variant="default" className="w-full" asChild>
-                <a href="mailto:contact@kebi.ai?subject=Vehix%20Demo%20Request&body=Hi%20Kebi%20AI%20Team%2C%0D%0A%0D%0AI'm%20interested%20in%20scheduling%20a%20demo%20of%20Vehix%20for%20my%20dealership.%0D%0A%0D%0ADealership%20Name%3A%20%0D%0AYour%20Name%3A%20%0D%0AYour%20Title%3A%20%0D%0APhone%20Number%3A%20%0D%0APreferred%20Date%2FTime%3A%20%0D%0A%0D%0AThank%20you%2C">
+                <a href={DEMO_URL}>
                   Request Demo
                 </a>
               </Button>

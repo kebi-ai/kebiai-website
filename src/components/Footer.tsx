@@ -1,5 +1,6 @@
 import { Mail, Linkedin, Twitter } from "lucide-react";
 import kebiLogo from "@/assets/images/kebi-logo.png";
+import { CONTACT_URL } from "@/lib/links";
 
 const Footer = () => {
   return (
@@ -28,9 +29,9 @@ const Footer = () => {
                 <Twitter className="w-4 h-4" />
               </a>
               <a
-                href="mailto:contact@kebi.ai"
+                href={CONTACT_URL}
                 className="w-8 h-8 rounded-full bg-background/10 hover:bg-background/20 flex items-center justify-center transition-colors"
-                aria-label="Email"
+                aria-label="Contact us"
               >
                 <Mail className="w-4 h-4" />
               </a>

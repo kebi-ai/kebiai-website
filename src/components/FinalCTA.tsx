@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { CheckCircle, ArrowRight } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import { DEMO_URL, SALES_URL } from "@/lib/links";
 
 const trustIndicators = [
   "No credit card required",
@@ -64,7 +65,7 @@ const FinalCTA = () => {
               className="text-lg px-10 group"
               asChild
             >
-              <a href="mailto:contact@kebi.ai?subject=Vehix%20Demo%20Request&body=Hi%20Kebi%20AI%20Team%2C%0D%0A%0D%0AI'm%20interested%20in%20scheduling%20a%20demo%20of%20Vehix%20for%20my%20dealership.%0D%0A%0D%0ADealership%20Name%3A%20%0D%0AYour%20Name%3A%20%0D%0AYour%20Title%3A%20%0D%0APhone%20Number%3A%20%0D%0APreferred%20Date%2FTime%3A%20%0D%0A%0D%0AThank%20you%2C">
+              <a href={DEMO_URL}>
                 <span>Request Your Demo</span>
                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
               </a>
@@ -75,7 +76,7 @@ const FinalCTA = () => {
               className="text-lg px-10 group"
               asChild
             >
-              <a href="mailto:contact@kebi.ai?subject=Sales%20Inquiry%20-%20Vehix&body=Hi%20Kebi%20AI%20Team%2C%0D%0A%0D%0AI'd%20like%20to%20speak%20with%20your%20sales%20team%20about%20Vehix.%0D%0A%0D%0ADealership%20Name%3A%20%0D%0AYour%20Name%3A%20%0D%0AYour%20Title%3A%20%0D%0APhone%20Number%3A%20%0D%0ABest%20Time%20to%20Call%3A%20%0D%0A%0D%0AThank%20you%2C">
+              <a href={SALES_URL}>
                 Talk to Sales
               </a>
             </Button>
